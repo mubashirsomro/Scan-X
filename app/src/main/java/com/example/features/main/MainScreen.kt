@@ -23,7 +23,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.core.navigation.*
-import com.example.features.documents.DocumentsScreen
+import com.example.features.files.FilesScreen
 import com.example.features.history.HistoryScreen
 import com.example.features.home.HomeScreen
 import com.example.features.settings.SettingsScreen
@@ -126,10 +126,10 @@ fun MainScreen(
                 HistoryScreen()
             }
             composable<DocumentsRoute> {
-                DocumentsScreen()
+                FilesScreen()
             }
             composable<SettingsRoute> {
-                SettingsScreen()
+                SettingsScreen(isDarkTheme = isDarkTheme, onThemeToggle = onThemeToggle)
             }
         }
     }
