@@ -1,0 +1,6 @@
+{
+  "name": "ScanX",
+  "description": "Smart Scanner & Utilities",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
